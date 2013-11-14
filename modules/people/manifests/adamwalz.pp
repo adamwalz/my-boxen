@@ -12,6 +12,7 @@ class people::adamwalz {
   include alfred
   include dropbox
   include flux
+  include sourcetree
 
   # OS X Preferences
   include osx::global::expand_print_dialog
