@@ -1,17 +1,22 @@
 class people::adamwalz {
 
-  $email    = "adam@adamwalz.net"
-  $home     = "/Users/${::boxen_user}"
-  $dotfiles = "${home}/.dotfiles"
+  $email      = "adam@adamwalz.net"
+  $home       = "/Users/${::boxen_user}"
+  $dotfiles   = "${home}/.dotfiles"
+  $ssh_config = "${home}/.ssh"
 
   repository { $dotfiles:
     source  => 'adamwalz/dotfiles'
   }
 
+  repository { $ssh_config:
+    source => 'adamwalz/ssh'
+  }
+
   # OS X Applications
   include alfred
   include dropbox
-  include evernote 
+  include evernote
   include flux
   include skitch
   include sizeup
