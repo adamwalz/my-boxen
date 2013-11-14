@@ -11,7 +11,9 @@ class people::adamwalz {
   # OS X Applications
   include alfred
   include dropbox
+  include evernote 
   include flux
+  include skitch
   include sourcetree
 
   # OS X Preferences

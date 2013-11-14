@@ -57,9 +57,11 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 github "alfred",    "1.1.6"
 github "chrome",    "1.1.2"
+github "evernote",  "2.0.4"
 github "dropbox",   "1.1.2"
 github "flux",      "1.0.0"
 github "iterm2",    "1.0.4"
 github "osx",       "2.0.0"
+github "skitch",    "1.0.2"
 github "sourcetree","1.0.0"
 
