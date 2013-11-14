@@ -77,6 +77,7 @@ node default {
 
   # OS X Applications
   include iterm2::stable
+  include chrome
 
   # OS X Settings
   include osx::global::enable_keyboard_control_access
