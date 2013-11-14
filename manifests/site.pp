@@ -89,8 +89,21 @@ node default {
   package {
     [
       'ack',
+      'coreutils',
+      'emacs',
+      'fasd',
       'findutils',
-      'gnu-tar'
+      'gfortran',
+      'gnu-tar',
+      'mobile-shell',
+      'pianobar',
+      'rbenv',
+      'reattach-to-user-namespace',
+      'trash',
+      'tree',
+      'tmux',
+      'zeromq',
+      'zsh'
     ]:
   }
 
