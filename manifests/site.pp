@@ -78,6 +78,12 @@ node default {
   # OS X Applications
   include iterm2::stable
 
+  # OS X Settings
+  include osx::global::enable_keyboard_control_access
+  include osx::universal_access::ctrl_mod_zoom
+  include osx::no_network_dsstores
+  include osx::software_update
+
   # common, useful packages
   package {
     [
