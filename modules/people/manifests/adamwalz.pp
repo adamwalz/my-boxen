@@ -8,6 +8,10 @@ class people::adamwalz {
     source  => 'adamwalz/dotfiles'
   }
 
+  # OS X Applications
+  include dropbox
+
+  # OS X Preferences
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
   include osx::global::disable_autocorrect
