@@ -9,6 +9,7 @@ class people::adamwalz {
   }
 
   # OS X Applications
+  include alfred
   include dropbox
 
   # OS X Preferences
