@@ -58,6 +58,7 @@ github "xquartz",    "1.1.0"
 github "alfred",    "1.1.6"
 github "chrome",    "1.1.2"
 github "dropbox",   "1.1.2"
+github "flux",      "1.0.0"
 github "iterm2",    "1.0.4"
 github "osx",       "2.0.0"
 

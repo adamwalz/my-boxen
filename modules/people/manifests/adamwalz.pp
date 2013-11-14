@@ -11,6 +11,7 @@ class people::adamwalz {
   # OS X Applications
   include alfred
   include dropbox
+  include flux
 
   # OS X Preferences
   include osx::global::expand_print_dialog
