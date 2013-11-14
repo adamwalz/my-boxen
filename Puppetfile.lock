@@ -109,6 +109,11 @@ GITHUBTARBALL
     ruby (6.7.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sizeup
+  specs:
+    sizeup (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-skitch
   specs:
     skitch (1.0.2)
@@ -167,6 +172,7 @@ DEPENDENCIES
   pkgconfig (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.7.2)
+  sizeup (= 1.0.0)
   skitch (= 1.0.2)
   sourcetree (= 1.0.0)
   stdlib (= 4.1.0)

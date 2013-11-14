@@ -14,6 +14,7 @@ class people::adamwalz {
   include evernote 
   include flux
   include skitch
+  include sizeup
   include sourcetree
   include watts
 
