@@ -64,4 +64,5 @@ github "iterm2",    "1.0.4"
 github "osx",       "2.0.0"
 github "skitch",    "1.0.2"
 github "sourcetree","1.0.0"
+github "watts",     "1.0.0"
 

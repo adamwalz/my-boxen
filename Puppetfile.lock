@@ -124,6 +124,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-watts
+  specs:
+    watts (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -166,5 +171,6 @@ DEPENDENCIES
   sourcetree (= 1.0.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  watts (= 1.0.0)
   xquartz (= 1.1.0)
 

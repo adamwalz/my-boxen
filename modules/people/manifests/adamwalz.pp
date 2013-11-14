@@ -15,6 +15,7 @@ class people::adamwalz {
   include flux
   include skitch
   include sourcetree
+  include watts
 
   # OS X Preferences
   include osx::global::expand_print_dialog
