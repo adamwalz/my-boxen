@@ -1,18 +1,17 @@
-# Our Boxen
+# My Boxen
 
-This is a template Boxen project designed for your organization to fork and
-modify appropriately.
-The Boxen rubygem and the Boxen puppet modules are only a framework for getting
-things done.
-This repository template is just a basic example of _how_ to do things with them.
+The Boxen rubygem and the Boxen puppet modules are a framework for getting
+things done. This project is boxen and puppet files for setting up a new mac
+automatically. Boxen will install applications, pull in other repositories
+(like dotfiles) and run setup commands.
 
 ## Getting Started
 
-To give you a brief overview, we're going to:
+To start using boxen, we'll need to
 
 * Install dependencies (basically Xcode)
-* Bootstrap a boxen for your self/team/org/company
-* Then convert your local copy of that boxen to the post-bootstrapped version
+* Bootstrap a boxen
+* Let boxen pull in anything else you want
 
 There are a few potential conflicts to keep in mind.
 Boxen does its best not to get in the way of a dirty system,
@@ -52,8 +51,13 @@ to get started.
 The reason for that is that you can't really make private forks of public
 repositories easily.
 
-Once you've done that, you can run the following to bootstrap
-your boxen:
+Once you've done that, you can use my installation one liner, or run each
+command yourself.
+
+####Installation one-liner
+```curl -L https://raw.github.com/adamwalz/dotfiles/master/install.sh | sh```
+
+#### --OR--
 
 ```
 sudo mkdir -p /opt/boxen
@@ -63,24 +67,6 @@ cd /opt/boxen/repo
 git remote rm origin
 git remote add origin <the location of my new git repository>
 git push -u origin master
-```
-
-### Distributing
-
-That's enough to get your boxen into a usable state on other machines,
-usually.
-From there, we recommend setting up
-[boxen-web](https://github.com/boxen/boxen-web)
-as an easy way to automate letting other folks install your boxen.
-
-If you _don't_ want to use boxen-web, folks can get using your boxen like so:
-
-```
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:staff /opt/boxen
-git clone <location of my new git repository> /opt/boxen/repo
-cd /opt/boxen/repo
-script/boxen
 ```
 
 Keep in mind this requires you to encrypt your hard drive by default.
@@ -115,12 +101,7 @@ This template project provides the following by default:
 * dnsmasq w/ .dev resolver for localhost
 * rbenv
 * Full Disk Encryption requirement
-* Node.js 0.4
-* Node.js 0.6
-* Node.js 0.8
-* Ruby 1.8.7
-* Ruby 1.9.2
-* Ruby 1.9.3
+* Node.js 0.10
 * Ruby 2.0.0
 * ack
 * Findutils
@@ -128,8 +109,8 @@ This template project provides the following by default:
 
 ## Customizing
 
-You can always check out the number of existing modules we already
-provide as optional installs under the
+You can always check out the number of existing modules already provided as
+optional installs under the
 [boxen organization](https://github.com/boxen). These modules are all
 tested to be compatible with Boxen. Use the `Puppetfile` to pull them
 in dependencies automatically whenever `boxen` is run.
@@ -242,32 +223,3 @@ See [the documentation in the
 `modules/projects`](modules/projects/README.md)
 directory for creating organization projects (i.e., repositories that people
 will be working in).
-
-## Binary packages
-
-We support binary packaging for everything in Homebrew, rbenv, and nvm.
-See `config/boxen.rb` for the environment variables to define.
-
-## Sharing Boxen Modules
-
-If you've got a Boxen module you'd like to be grouped under the Boxen org,
-(so it can easily be found by others), please file an issue on this
-repository with a link to your module.
-We'll review the code briefly, and if things look pretty all right,
-we'll fork it under the Boxen org and give you read+write access to our
-fork.
-You'll still be the maintainer, you'll still own the issues and PRs.
-It'll just be listed under the boxen org so folks can find it more easily.
-
-## Integrating with Github Enterprise
-
-If you're using a Github Enterprise instance rather than github.com,
-you will need to set the `BOXEN_GITHUB_ENTERPRISE_URL` and
-`BOXEN_REPO_URL_TEMPLATE` variables in your
-[Boxen config](config/boxen.rb).
-
-## Halp!
-
-See [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md).
-
-Use Issues or #boxen on irc.freenode.net.
