@@ -6,22 +6,35 @@ class people::adamwalz {
   $dotfiles   = "${home}/.dotfiles"
   $ssh_config = "${home}/.ssh"
 
-  repository { $zprezto:
-    source => 'adamwalz/prezto',
+  repository {
+    $zprezto:
+      source => "adamwalz/prezto";
+    $dotfiles:
+      source => "adamwalz/dotfiles";
+    $ssh_config:
+      source => "adamwalz/SSH"
   }
 
-  repository { $dotfiles:
-    source  => 'adamwalz/dotfiles'
+  exec {
+    "Pull dotfile updates":
+      require => Repository[$dotfiles],
+      command => "git pull --ff",
+      cwd => $dotfiles;
+    "Pull zprezto updates":
+      require => Repository[$zprezto],
+      command => "git pull --ff",
+      cwd => $zprezto;
+    "Pull SSH config updates":
+      require => Repository[$ssh_config],
+      command => "git pull --ff",
+      cwd => $ssh_config
   }
 
-  exec { "Symlink dotfiles":
-    require => Repository[$dotfiles],
-    command => "rake install",
-    cwd => $dotfiles
-  }
-
-  repository { $ssh_config:
-    source => 'adamwalz/SSH'
+  exec {
+    "Symlink dotfiles":
+      require => Exec["Pull dotfile updates"],
+      command => "rake install",
+      cwd => $dotfiles
   }
 
   # OS X Applications
