@@ -2,15 +2,26 @@ class people::adamwalz {
 
   $email      = "adam@adamwalz.net"
   $home       = "/Users/${::boxen_user}"
+  $zprezto    = "${home}/.zprezto"
   $dotfiles   = "${home}/.dotfiles"
   $ssh_config = "${home}/.ssh"
+
+  repository { $zprezto:
+    source => 'adamwalz/prezto',
+  }
 
   repository { $dotfiles:
     source  => 'adamwalz/dotfiles'
   }
 
+  exec { "Symlink dotfiles":
+    require => Repository[$dotfiles],
+    command => "rake install",
+    cwd => $dotfiles
+  }
+
   repository { $ssh_config:
-    source => 'adamwalz/ssh'
+    source => 'adamwalz/SSH'
   }
 
   # OS X Applications
