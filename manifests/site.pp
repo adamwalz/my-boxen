@@ -63,16 +63,10 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  # node versions
-  include nodejs::v0_4
-  include nodejs::v0_6
-  include nodejs::v0_8
+  # node versions (possible include v_4 v_6 v_8 v_10)
   include nodejs::v0_10
 
-  # default ruby versions
-  include ruby::1_8_7
-  include ruby::1_9_2
-  include ruby::1_9_3
+  # default ruby versions (possible include 1_8_7 1_9_2 1_9_3 2_0_0)
   include ruby::2_0_0
 
   # OS X Applications
