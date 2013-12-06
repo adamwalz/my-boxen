@@ -55,7 +55,7 @@ Once you've done that, you can use my installation one liner, or run each
 command yourself.
 
 ####Installation one-liner
-```curl -L https://raw.github.com/adamwalz/dotfiles/master/install.sh | sh```
+```curl -L https://raw.github.com/adamwalz/my-boxen/master/install.sh | sh```
 
 #### --OR--
 
