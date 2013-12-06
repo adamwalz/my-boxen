@@ -9,4 +9,4 @@
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
 git clone https://github.com/adamwalz/my-boxen /opt/boxen/repo
-/opt/boxen/repo/script/boxen
+/opt/boxen/repo/script/boxen --srcdir ${HOME}/Developer
