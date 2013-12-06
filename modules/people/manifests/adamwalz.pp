@@ -59,4 +59,8 @@ class people::adamwalz {
     size => 64
   }
 
+  # Ruby settings
+  class { 'ruby::global' :
+    version => '2.0.0-p353'
+  }
 }
