@@ -37,6 +37,9 @@ class people::adamwalz {
       cwd => $dotfiles
   }
 
+  # Projects
+  include projects::adamwalz_net
+
   # OS X Applications
   include alfred
   include crashplan
