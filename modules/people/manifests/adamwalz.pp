@@ -3,7 +3,7 @@ class people::adamwalz {
   $email      = "adam@adamwalz.net"
   $home       = "/Users/${::boxen_user}"
   $zprezto    = "${home}/.zprezto"
-  $dotfiles   = "${home}/.dotfiles"
+  $dotfiles   = "${boxen::config::srcdir}/setup/dotfiles"
   $ssh_config = "${home}/.ssh"
 
   repository {

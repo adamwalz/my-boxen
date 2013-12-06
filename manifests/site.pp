@@ -101,7 +101,7 @@ node default {
     ]:
   }
 
-  file { "${boxen::config::srcdir}/my-boxen":
+  file { "${boxen::config::srcdir}/setup/my-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
