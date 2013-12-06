@@ -42,6 +42,7 @@ class people::adamwalz {
   include dropbox
   include evernote
   include flux
+  include parallels::v8
   include skitch
   include sizeup
   include sourcetree
