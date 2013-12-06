@@ -29,18 +29,18 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.3.4"
+github "boxen", "3.3.5"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
 github "dnsmasq",    "1.0.0"
 github "foreman",    "1.0.0"
-github "gcc",        "2.0.1"
-github "git",        "1.2.5"
+github "gcc",        "2.0.100"
+github "git",        "1.3.6"
 github "go",         "1.0.0"
-github "homebrew",   "1.5.1"
-github "hub",        "1.0.3"
+github "homebrew",   "1.6.0"
+github "hub",        "1.2.0"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
 github "nodejs",     "3.3.0"
@@ -48,20 +48,20 @@ github "openssl",    "1.0.0"
 github "phantomjs",  "2.0.2"
 github "pkgconfig",  "1.0.0"
 github "repository", "2.2.0"
-github "ruby",       "6.7.2"
+github "ruby",       "6.7.6"
 github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
-github "xquartz",    "1.1.0"
+github "xquartz",    "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "alfred",    "1.1.6"
+github "alfred",    "1.1.7"
 github "chrome",    "1.1.2"
 github "evernote",  "2.0.4"
-github "dropbox",   "1.1.2"
+github "dropbox",   "1.2.0"
 github "flux",      "1.0.0"
-github "iterm2",    "1.0.4"
-github "osx",       "2.0.0"
+github "iterm2",    "1.0.6"
+github "osx",       "2.2.0"
 github "skitch",    "1.0.2"
 github "sizeup",    "1.0.0"
 github "sourcetree","1.0.0"
