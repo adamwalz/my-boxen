@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: adamwalz/puppet-appzapper
+  specs:
+    appzapper (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
     alfred (1.1.7)
@@ -120,6 +125,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   alfred (= 1.1.7)
+  appzapper (= 1.0.0)
   boxen (= 3.3.5)
   chrome (= 1.1.2)
   crashplan (= 1.0.1)

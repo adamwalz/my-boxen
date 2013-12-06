@@ -47,6 +47,7 @@ github "xquartz",    "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 github "alfred",    "1.1.7"
+github "appzapper", "1.0.0",  :repo => "adamwalz/puppet-appzapper"
 github "chrome",    "1.1.2"
 github "crashplan", "1.0.1"
 github "evernote",  "2.0.4"
