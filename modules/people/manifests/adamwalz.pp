@@ -47,7 +47,7 @@ class people::adamwalz {
   include sizeup
   include sourcetree
   include sublime_text_3
-  include watts
+  include vlc
 
   # OS X Preferences
   include osx::global::expand_print_dialog
