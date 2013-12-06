@@ -65,4 +65,10 @@ class people::adamwalz {
   class { 'ruby::global' :
     version => '2.0.0-p353'
   }
+
+  include sublime_text_3::package_control
+  sublime_text_3::package {
+    'Theme - Soda':
+      source => 'buymeasoda/soda-theme'
+  }
 }
