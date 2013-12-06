@@ -39,6 +39,7 @@ class people::adamwalz {
 
   # OS X Applications
   include alfred
+  include crashplan
   include dropbox
   include evernote
   include flux

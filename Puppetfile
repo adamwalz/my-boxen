@@ -48,6 +48,7 @@ github "xquartz",    "1.1.1"
 # https://github.com/boxen.
 github "alfred",    "1.1.7"
 github "chrome",    "1.1.2"
+github "crashplan", "1.0.1"
 github "evernote",  "2.0.4"
 github "dropbox",   "1.2.0"
 github "flux",      "1.0.0"
