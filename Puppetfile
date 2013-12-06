@@ -65,5 +65,6 @@ github "osx",       "2.0.0"
 github "skitch",    "1.0.2"
 github "sizeup",    "1.0.0"
 github "sourcetree","1.0.0"
+github "sublime_text_3", "1.0.1", :repo => "jozefizso/puppet-sublime_text_3"
 github "watts",     "1.0.0"
 

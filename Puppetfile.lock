@@ -139,6 +139,11 @@ GITHUBTARBALL
     xquartz (1.1.0)
 
 GITHUBTARBALL
+  remote: jozefizso/puppet-sublime_text_3
+  specs:
+    sublime_text_3 (1.0.1)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -176,6 +181,7 @@ DEPENDENCIES
   skitch (= 1.0.2)
   sourcetree (= 1.0.0)
   stdlib (= 4.1.0)
+  sublime_text_3 (= 1.0.1)
   sudo (= 1.0.0)
   watts (= 1.0.0)
   xquartz (= 1.1.0)

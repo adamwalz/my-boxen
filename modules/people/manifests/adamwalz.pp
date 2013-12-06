@@ -45,6 +45,7 @@ class people::adamwalz {
   include skitch
   include sizeup
   include sourcetree
+  include sublime_text_3
   include watts
 
   # OS X Preferences
