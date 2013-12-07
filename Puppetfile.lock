@@ -129,6 +129,11 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
+  remote: joshuairl/puppet-filezilla
+  specs:
+    filezilla (1.0.0)
+
+GITHUBTARBALL
   remote: jozefizso/puppet-sublime_text_3
   specs:
     sublime_text_3 (1.0.1)
@@ -157,6 +162,7 @@ DEPENDENCIES
   dnsmasq (= 1.0.0)
   dropbox (= 1.2.0)
   evernote (= 2.0.4)
+  filezilla (= 1.0.0)
   flux (= 1.0.0)
   gcc (= 2.0.100)
   git (= 1.3.6)

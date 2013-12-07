@@ -46,6 +46,7 @@ class people::adamwalz {
   include crashplan
   include dropbox
   include evernote
+  include filezilla
   include flux
   include parallels::v8
   include skitch
