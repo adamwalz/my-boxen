@@ -43,6 +43,7 @@ class people::adamwalz {
   # OS X Applications
   include alfred
   #include appzapper
+  include bartender
   include crashplan
   include dropbox
   include evernote

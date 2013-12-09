@@ -53,6 +53,7 @@ github "xquartz",        "1.1.1"
 # https://github.com/boxen.
 github "alfred",         "1.1.7"
 github "appzapper",      "1.0.0",  :repo => "adamwalz/puppet-appzapper"
+github "bartender",      "1.0.0", :repo => "erichkist/puppet-bartender"
 github "chrome",         "1.1.2"
 github "crashplan",      "1.0.1"
 github "evernote",       "2.0.4"
