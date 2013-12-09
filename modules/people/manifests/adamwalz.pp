@@ -8,11 +8,11 @@ class people::adamwalz {
 
   repository {
     $zprezto:
-      source => "adamwalz/prezto";
+      source => "#{::boxen_user}/prezto";
     $dotfiles:
-      source => "adamwalz/dotfiles";
+      source => "#{::boxen_user}/dotfiles";
     $ssh_config:
-      source => "adamwalz/SSH"
+      source => "#{::boxen_user}/SSH"
   }
 
   exec {
@@ -64,6 +64,14 @@ class people::adamwalz {
   osx::recovery_message { "If this Mac is found, please email $email": }
   class { 'osx::dock::icon_size':
     size => 64
+  }
+
+  # Git Settings
+  git::config::global {
+    'user.name':
+      value => 'Adam Walz';
+    'user.email':
+      value => $email
   }
 
   # Ruby settings
