@@ -91,7 +91,6 @@ node default {
       'gnu-tar',
       'mobile-shell',
       'pianobar',
-      'rbenv',
       'reattach-to-user-namespace',
       'trash',
       'tree',
