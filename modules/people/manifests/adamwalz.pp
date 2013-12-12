@@ -46,6 +46,7 @@ class people::adamwalz {
   include bartender
   include crashplan
   include dropbox
+  include eclipse::java
   include evernote
   include filezilla
   include flux

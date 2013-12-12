@@ -34,6 +34,11 @@ GITHUBTARBALL
     dropbox (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-eclipse
+  specs:
+    eclipse (2.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-evernote
   specs:
     evernote (2.0.4)
@@ -167,6 +172,7 @@ DEPENDENCIES
   crashplan (= 1.0.1)
   dnsmasq (= 1.0.0)
   dropbox (= 1.2.0)
+  eclipse (= 2.2.0)
   evernote (= 2.0.4)
   filezilla (= 1.0.0)
   flux (= 1.0.0)
