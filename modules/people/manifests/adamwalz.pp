@@ -76,7 +76,7 @@ class people::adamwalz {
       value => $email;
   }
   Git::Config::Global <| title == 'core.excludesfile' |> {
-    value => "$home/.gitignore"
+    value => "~/.gitignore"
   }
 
   # Ruby settings
