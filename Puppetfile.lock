@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.3.5)
+    boxen (3.3.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -91,7 +91,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.2.0)
+    osx (2.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -101,7 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.7.6)
+    ruby (6.9.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-sizeup
@@ -167,7 +167,7 @@ DEPENDENCIES
   alfred (= 1.1.7)
   appzapper (= 1.0.0)
   bartender (= 1.0.0)
-  boxen (= 3.3.5)
+  boxen (= 3.3.6)
   chrome (= 1.1.2)
   crashplan (= 1.0.1)
   dnsmasq (= 1.0.0)
@@ -185,10 +185,10 @@ DEPENDENCIES
   nginx (= 1.4.2)
   nodejs (= 3.3.0)
   openssl (= 1.0.0)
-  osx (= 2.2.0)
+  osx (= 2.2.2)
   parallels (= 1.0.0)
   repository (= 2.2.0)
-  ruby (= 6.7.6)
+  ruby (= 6.9.0)
   sizeup (= 1.0.0)
   skitch (= 1.0.2)
   sourcetree (= 1.0.0)
