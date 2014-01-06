@@ -38,7 +38,9 @@ class people::adamwalz {
   }
 
   # Projects
-  include projects::adamwalz_net
+  if $hostname !~ /.*evernote.*/ {
+      include projects::adamwalz_net
+  }
 
   # OS X Applications
   include alfred
