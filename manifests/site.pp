@@ -12,6 +12,7 @@ Exec {
     "${boxen::config::home}/rbenv/bin",
     "${boxen::config::home}/rbenv/plugins/ruby-build/bin",
     "${boxen::config::home}/homebrew/bin",
+    "/Users/${::boxen_user}/.tilde/bin",
     '/usr/bin',
     '/bin',
     '/usr/sbin',
