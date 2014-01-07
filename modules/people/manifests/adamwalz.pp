@@ -8,11 +8,11 @@ class people::adamwalz {
 
   repository {
     $zprezto:
-      source => "#{::boxen_user}/prezto";
+      source => "adamwalz/prezto";
     $dotfiles:
-      source => "#{::boxen_user}/dotfiles";
+      source => "adamwalz/dotfiles";
     $ssh_config:
-      source => "#{::boxen_user}/SSH"
+      source => "adamwalz/SSH"
   }
 
   exec {
