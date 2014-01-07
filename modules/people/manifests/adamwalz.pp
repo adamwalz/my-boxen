@@ -1,10 +1,17 @@
 class people::adamwalz {
 
-  $email      = "adam@adamwalz.net"
   $home       = "/Users/${::boxen_user}"
   $zprezto    = "${home}/.zprezto"
   $dotfiles   = "${boxen::config::srcdir}/setup/dotfiles"
   $ssh_config = "${home}/.ssh"
+
+  notify{"The users home is: ${home}": }
+
+  if $hostname !~ /.*Evernote.*/ {
+    $email    = "adam@adamwalz.net"
+  } else {
+    $email    = "awalz@evernote.com"
+  }
 
   repository {
     $zprezto:
@@ -38,8 +45,8 @@ class people::adamwalz {
   }
 
   # Projects
-  if $hostname !~ /.*evernote.*/ {
-      include projects::adamwalz_net
+  if $hostname !~ /.*Evernote.*/ {
+    include projects::adamwalz_net
   }
 
   # OS X Applications
@@ -49,15 +56,17 @@ class people::adamwalz {
   include crashplan
   include dropbox
   include eclipse::java
-  include evernote
   include filezilla
   include flux
   include parallels::v8
-  include skitch
   include sizeup
   include sourcetree
   include sublime_text_3
   include vlc
+  if $hostname !~ /.*Evernote.*/ {
+    include evernote
+    include skitch
+  }
 
   # OS X Preferences
   include osx::global::expand_print_dialog
@@ -75,7 +84,7 @@ class people::adamwalz {
     'user.name':
       value => 'Adam Walz';
     'user.email':
-      value => $email;
+      value => "awalz@evernote.com"
   }
   Git::Config::Global <| title == 'core.excludesfile' |> {
     value => "~/.gitignore"
